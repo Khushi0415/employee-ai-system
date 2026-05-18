@@ -16,7 +16,7 @@ function EmployeeList() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/employees"
+        "https://employee-ai-backend.onrender.com/api/employees",
       );
 
       setEmployees(res.data);
