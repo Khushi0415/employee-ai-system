@@ -16,7 +16,7 @@ function Recommendation() {
     try {
 
       const res = await axios.post(
-        "https://employee-ai-backend.onrender.com/api/employees",
+        "https://employee-ai-system-981j.onrender.com/api/ai/recommend",
         employee
       );
 
