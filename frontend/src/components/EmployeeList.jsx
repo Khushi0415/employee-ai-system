@@ -16,7 +16,7 @@ function EmployeeList() {
     try {
 
       const res = await axios.get(
-        "https://employee-ai-system-981j.onrender.com/api/employees",
+        "https://employee-ai-system-981j.onrender.com/api/employees"
       );
 
       setEmployees(res.data);
@@ -37,12 +37,9 @@ function EmployeeList() {
 
           <div
             key={emp._id}
-            style={{
-              border: "1px solid gray",
-              padding: "10px",
-              marginBottom: "10px",
-            }}
+            className="employee-card"
           >
+
             <h3>{emp.name}</h3>
 
             <p>Email: {emp.email}</p>
@@ -52,13 +49,11 @@ function EmployeeList() {
             </p>
 
             <p>
-              Skills:
-              {emp.skills.join(", ")}
+              Skills: {emp.skills.join(", ")}
             </p>
 
             <p>
-              Score:
-              {emp.performanceScore}
+              Score: {emp.performanceScore}
             </p>
 
           </div>
