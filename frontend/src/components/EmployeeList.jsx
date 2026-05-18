@@ -32,6 +32,18 @@ function EmployeeList() {
 
       <h2>Employee List</h2>
 
+      <input
+        type="text"
+        placeholder="Search Department"
+        style={{
+          padding: "10px",
+          width: "300px",
+          marginBottom: "20px",
+          borderRadius: "6px",
+          border: "1px solid #ccc"
+        }}
+      />
+
       {
         employees.map((emp) => (
 
